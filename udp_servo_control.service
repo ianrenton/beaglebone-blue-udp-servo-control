@@ -1,0 +1,11 @@
+[Unit]
+Description=UDP Servo Control
+Requires=systemd-modules-load.service
+
+[Service]
+User=root
+ExecStart=/usr/local/bin/udp_servo_control
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
